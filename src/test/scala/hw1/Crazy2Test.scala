@@ -46,6 +46,7 @@ class Crazy2Test extends FunSuite with ShouldMatchers {
 
     Crazy2.crazy2add(c01_1, c01_1) should be (ZERO(ZERO(ONE(MONE(NIL)))))
     Crazy2.crazy2add(c01_1, c111) should be (ONE(ZERO(ONE(NIL))))
+    Crazy2.crazy2add(c01_1, c1) should be (ONE(ONE(MONE(NIL))))
 
     val x = Crazy2.crazy2val(c01_1)
     val z = Crazy2.crazy2val(Crazy2.crazy2add(c01_1, c01_1))
